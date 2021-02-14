@@ -8,3 +8,4 @@ E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1VISUAL ESTUDIO 2019, PROYECTOS\Alvaro01\
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1VISUAL ESTUDIO 2019, PROYECTOS\Alvaro01\Alvaro01\obj\Debug\Alvaro01.exe
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1VISUAL ESTUDIO 2019, PROYECTOS\Alvaro01\Alvaro01\obj\Debug\Alvaro01.pdb
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1VISUAL ESTUDIO 2019, PROYECTOS\Alvaro01\Alvaro01\obj\Debug\Alvaro01.PanelLogin.resources
+E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1VISUAL ESTUDIO 2019, PROYECTOS\Alvaro01\Alvaro01\obj\Debug\Alvaro01.VISTA.FrmMenu.resources

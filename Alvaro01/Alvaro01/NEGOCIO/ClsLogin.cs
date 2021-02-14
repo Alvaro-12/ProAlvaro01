@@ -10,7 +10,16 @@ namespace Alvaro01.NEGOCIO
     class ClsLogin
     {
 
-        Login log = new Login(); 
+        public int Ingresar(Login log)
+        {
+            int estado = 0;
 
+            if (log.Ususario.Equals("Alvaro")&& log.Password.Equals("0123") ){
+                estado = 1;
+            
+            }
+
+            return  estado;
+        }
     }
 }
