@@ -1,5 +1,6 @@
 ﻿using Alvaro01.DOMINIO;
 using Alvaro01.NEGOCIO;
+using Alvaro01.VISTA;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,11 +44,15 @@ namespace Alvaro01
             if (VariableDeEvaluacion == 1)
             {
 
-                MessageBox.Show("Welcome");
+                MessageBox.Show("Bienvenido");
+                FrmMenu frm = new FrmMenu();
+                frm.Show();
+                this.Hide();
+
 
             }
             else {
-                MessageBox.Show("La contraseña o el Usuario No coinciden.");
+                MessageBox.Show("La contraseña o el usuario No coinciden.");
             }
 
         }

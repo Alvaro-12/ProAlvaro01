@@ -21,5 +21,17 @@ namespace Alvaro01.VISTA
         {
 
         }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clickAquiParaMasInformaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDe frm = new FrmAcercaDe();
+            frm.MdiParent = this;
+            frm.Show(); 
+        }
     }
 }
