@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ClsListaUsuarios.cs" />
     <Compile Include="DOMINIO\Login.cs" />
     <Compile Include="NEGOCIO\ClsLogin.cs" />
     <Compile Include="VISTA\FrmAcercaDe.cs">
@@ -53,6 +54,12 @@
     </Compile>
     <Compile Include="VISTA\FrmAcercaDe.Designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA\FrmListaVisualDeUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmListaVisualDeUsuarios.Designer.cs">
+      <DependentUpon>FrmListaVisualDeUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -79,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="VISTA\FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmListaVisualDeUsuarios.resx">
+      <DependentUpon>FrmListaVisualDeUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

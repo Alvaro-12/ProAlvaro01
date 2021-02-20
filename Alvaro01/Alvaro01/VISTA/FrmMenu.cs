@@ -33,5 +33,11 @@ namespace Alvaro01.VISTA
             frm.MdiParent = this;
             frm.Show(); 
         }
+
+        private void arreglosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaVisualDeUsuarios frmVisual = new FrmListaVisualDeUsuarios();
+            frmVisual.Show();
+        }
     }
 }
