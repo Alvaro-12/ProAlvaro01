@@ -34,6 +34,10 @@ namespace Alvaro01.VISTA
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clickAquiParaMasInformaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matematicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sumasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,10 +54,11 @@ namespace Alvaro01.VISTA
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acercaDeToolStripMenuItem,
-            this.arreglosToolStripMenuItem});
+            this.arreglosToolStripMenuItem,
+            this.matematicasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(840, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(773, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,11 +84,48 @@ namespace Alvaro01.VISTA
             this.arreglosToolStripMenuItem.Text = "Arreglos";
             this.arreglosToolStripMenuItem.Click += new System.EventHandler(this.arreglosToolStripMenuItem_Click);
             // 
+            // matematicasToolStripMenuItem
+            // 
+            this.matematicasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sumasToolStripMenuItem,
+            this.restasToolStripMenuItem});
+            this.matematicasToolStripMenuItem.Name = "matematicasToolStripMenuItem";
+            this.matematicasToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.matematicasToolStripMenuItem.Text = "Matematicas";
+            // 
+            // sumasToolStripMenuItem
+            // 
+            this.sumasToolStripMenuItem.Name = "sumasToolStripMenuItem";
+            this.sumasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sumasToolStripMenuItem.Text = "Sumas";
+            this.sumasToolStripMenuItem.Click += new System.EventHandler(this.sumasToolStripMenuItem_Click);
+            // 
+            // restasToolStripMenuItem
+            // 
+            this.restasToolStripMenuItem.Name = "restasToolStripMenuItem";
+            this.restasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restasToolStripMenuItem.Text = "Restas";
+            this.restasToolStripMenuItem.Click += new System.EventHandler(this.restasToolStripMenuItem_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(793, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 600);
+            this.ClientSize = new System.Drawing.Size(773, 399);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
@@ -106,5 +148,9 @@ namespace Alvaro01.VISTA
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clickAquiParaMasInformaciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arreglosToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem matematicasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sumasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restasToolStripMenuItem;
     }
 }

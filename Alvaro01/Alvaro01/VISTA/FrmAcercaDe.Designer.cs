@@ -68,7 +68,7 @@ namespace Alvaro01.VISTA
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmAcercaDe
@@ -78,7 +78,7 @@ namespace Alvaro01.VISTA
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "FrmAcercaDe";
-            this.Text = "FrmAcercaDe";
+            this.Text = "Acerca de:";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

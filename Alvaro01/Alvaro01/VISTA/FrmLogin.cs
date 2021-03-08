@@ -46,6 +46,7 @@ namespace Alvaro01
 
                 MessageBox.Show("Bienvenido");
                 FrmMenu frm = new FrmMenu();
+                frm.usuarioEstao = TxtUser.Text;
                 frm.Show();
                 this.Hide();
 

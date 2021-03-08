@@ -9,7 +9,7 @@ namespace Alvaro01.DAO
     class ClsListaUsuarios
     {
         public String[] user = new string[3] { "Alvaro", "Danilo", "Juan" };
-        public String[] pass = new string[3] { "0123", "02", "02" };
+        public String[] pass = new string[3] { "0123", "01", "02" };
 
     }
 }

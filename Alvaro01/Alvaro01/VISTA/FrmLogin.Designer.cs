@@ -40,6 +40,9 @@ namespace Alvaro01
             // 
             // TxtUser
             // 
+            this.TxtUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtUser.Location = new System.Drawing.Point(118, 81);
             this.TxtUser.Margin = new System.Windows.Forms.Padding(4);
             this.TxtUser.Name = "TxtUser";
@@ -49,6 +52,9 @@ namespace Alvaro01
             // 
             // TxtPass
             // 
+            this.TxtPass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtPass.Location = new System.Drawing.Point(118, 115);
             this.TxtPass.Margin = new System.Windows.Forms.Padding(4);
             this.TxtPass.Name = "TxtPass";

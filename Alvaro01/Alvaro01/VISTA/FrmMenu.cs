@@ -16,7 +16,7 @@ namespace Alvaro01.VISTA
         {
             InitializeComponent();
         }
-
+        public String usuarioEstao;
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,6 +24,7 @@ namespace Alvaro01.VISTA
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
+            label2.Text = usuarioEstao; 
 
         }
 
@@ -38,6 +39,23 @@ namespace Alvaro01.VISTA
         {
             FrmListaVisualDeUsuarios frmVisual = new FrmListaVisualDeUsuarios();
             frmVisual.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sumasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOperaciones frmOperaciones = new  FrmOperaciones();
+            frmOperaciones.Show();
+        }
+
+        private void restasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOperaciones frmOperaciones = new FrmOperaciones();
+            frmOperaciones.Show();
         }
     }
 }
