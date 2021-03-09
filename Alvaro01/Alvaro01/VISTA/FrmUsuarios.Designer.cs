@@ -44,7 +44,7 @@ namespace Alvaro01.VISTA
             this.LblEdad = new System.Windows.Forms.Label();
             this.LblContraseña = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgListaUsuarios = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,13 +52,13 @@ namespace Alvaro01.VISTA
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListaUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnGuardar.AutoSize = true;
             this.BtnGuardar.Location = new System.Drawing.Point(37, 27);
@@ -71,8 +71,8 @@ namespace Alvaro01.VISTA
             // 
             // TxtNameUser
             // 
-            this.TxtNameUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.TxtNameUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNameUser.Location = new System.Drawing.Point(139, 57);
             this.TxtNameUser.Name = "TxtNameUser";
@@ -81,8 +81,8 @@ namespace Alvaro01.VISTA
             // 
             // TxtApellido
             // 
-            this.TxtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.TxtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtApellido.Location = new System.Drawing.Point(139, 109);
             this.TxtApellido.Name = "TxtApellido";
@@ -91,8 +91,8 @@ namespace Alvaro01.VISTA
             // 
             // TxtEdad
             // 
-            this.TxtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.TxtEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtEdad.Location = new System.Drawing.Point(139, 155);
             this.TxtEdad.Name = "TxtEdad";
@@ -101,8 +101,8 @@ namespace Alvaro01.VISTA
             // 
             // TxtPass
             // 
-            this.TxtPass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.TxtPass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtPass.Location = new System.Drawing.Point(139, 204);
             this.TxtPass.Name = "TxtPass";
@@ -111,8 +111,8 @@ namespace Alvaro01.VISTA
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.BtnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnEliminar.AutoSize = true;
             this.BtnEliminar.Location = new System.Drawing.Point(263, 27);
@@ -125,8 +125,8 @@ namespace Alvaro01.VISTA
             // 
             // TxtId
             // 
-            this.TxtId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.TxtId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtId.Location = new System.Drawing.Point(139, 12);
             this.TxtId.Name = "TxtId";
@@ -135,8 +135,8 @@ namespace Alvaro01.VISTA
             // 
             // BtnActualizar
             // 
-            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnActualizar.AutoSize = true;
             this.BtnActualizar.Location = new System.Drawing.Point(468, 27);
@@ -149,8 +149,8 @@ namespace Alvaro01.VISTA
             // 
             // LblId
             // 
-            this.LblId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LblId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblId.AutoSize = true;
             this.LblId.Location = new System.Drawing.Point(40, 12);
@@ -161,8 +161,8 @@ namespace Alvaro01.VISTA
             // 
             // LblUser
             // 
-            this.LblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LblUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblUser.AutoSize = true;
             this.LblUser.Location = new System.Drawing.Point(40, 64);
@@ -173,8 +173,8 @@ namespace Alvaro01.VISTA
             // 
             // LblApellido
             // 
-            this.LblApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LblApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblApellido.AutoSize = true;
             this.LblApellido.Location = new System.Drawing.Point(40, 116);
@@ -185,8 +185,8 @@ namespace Alvaro01.VISTA
             // 
             // LblEdad
             // 
-            this.LblEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LblEdad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblEdad.AutoSize = true;
             this.LblEdad.Location = new System.Drawing.Point(40, 162);
@@ -197,8 +197,8 @@ namespace Alvaro01.VISTA
             // 
             // LblContraseña
             // 
-            this.LblContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.LblContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblContraseña.AutoSize = true;
             this.LblContraseña.Location = new System.Drawing.Point(43, 210);
@@ -209,8 +209,8 @@ namespace Alvaro01.VISTA
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.BtnGuardar);
             this.panel1.Controls.Add(this.BtnEliminar);
@@ -220,23 +220,24 @@ namespace Alvaro01.VISTA
             this.panel1.Size = new System.Drawing.Size(608, 112);
             this.panel1.TabIndex = 13;
             // 
-            // dataGridView1
+            // dtgListaUsuarios
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgListaUsuarios.AllowUserToAddRows = false;
+            this.dtgListaUsuarios.AllowUserToDeleteRows = false;
+            this.dtgListaUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgListaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgListaUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 248);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(603, 266);
-            this.dataGridView1.TabIndex = 14;
+            this.dtgListaUsuarios.Location = new System.Drawing.Point(12, 248);
+            this.dtgListaUsuarios.Name = "dtgListaUsuarios";
+            this.dtgListaUsuarios.ReadOnly = true;
+            this.dtgListaUsuarios.Size = new System.Drawing.Size(603, 266);
+            this.dtgListaUsuarios.TabIndex = 14;
+            this.dtgListaUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListaUsuarios_CellClick);
             // 
             // Column5
             // 
@@ -281,7 +282,7 @@ namespace Alvaro01.VISTA
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(627, 644);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgListaUsuarios);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblContraseña);
             this.Controls.Add(this.LblEdad);
@@ -298,7 +299,7 @@ namespace Alvaro01.VISTA
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgListaUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,7 +322,7 @@ namespace Alvaro01.VISTA
         private System.Windows.Forms.Label LblEdad;
         private System.Windows.Forms.Label LblContraseña;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgListaUsuarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

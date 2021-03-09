@@ -38,6 +38,8 @@ namespace Alvaro01.VISTA
             this.sumasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.conexionesBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cRUDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +57,8 @@ namespace Alvaro01.VISTA
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acercaDeToolStripMenuItem,
             this.arreglosToolStripMenuItem,
-            this.matematicasToolStripMenuItem});
+            this.matematicasToolStripMenuItem,
+            this.conexionesBDToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(773, 24);
@@ -92,6 +95,7 @@ namespace Alvaro01.VISTA
             this.matematicasToolStripMenuItem.Name = "matematicasToolStripMenuItem";
             this.matematicasToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.matematicasToolStripMenuItem.Text = "Matematicas";
+            this.matematicasToolStripMenuItem.Click += new System.EventHandler(this.matematicasToolStripMenuItem_Click);
             // 
             // sumasToolStripMenuItem
             // 
@@ -119,6 +123,21 @@ namespace Alvaro01.VISTA
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // conexionesBDToolStripMenuItem
+            // 
+            this.conexionesBDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cRUDToolStripMenuItem});
+            this.conexionesBDToolStripMenuItem.Name = "conexionesBDToolStripMenuItem";
+            this.conexionesBDToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.conexionesBDToolStripMenuItem.Text = "Conexiones BD";
+            // 
+            // cRUDToolStripMenuItem
+            // 
+            this.cRUDToolStripMenuItem.Name = "cRUDToolStripMenuItem";
+            this.cRUDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cRUDToolStripMenuItem.Text = "CRUD";
+            this.cRUDToolStripMenuItem.Click += new System.EventHandler(this.cRUDToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
@@ -152,5 +171,7 @@ namespace Alvaro01.VISTA
         private System.Windows.Forms.ToolStripMenuItem matematicasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sumasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexionesBDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cRUDToolStripMenuItem;
     }
 }

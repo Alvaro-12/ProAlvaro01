@@ -17,9 +17,19 @@ namespace Alvaro01.VISTA
         {
             InitializeComponent();
             carga();
+            clear();
+        }
+
+        void clear() {
+            TxtId.Clear();
+            TxtNameUser.Clear();
+            TxtApellido.Clear();
+            TxtEdad.Clear();
+            TxtPass.Clear();
+        
         }
         void carga() {
-            dataGridView1.Rows.Clear();
+            dtgListaUsuarios.Rows.Clear();
             
             using (programacionEntities db = new programacionEntities())
             {
@@ -28,7 +38,7 @@ namespace Alvaro01.VISTA
                 foreach (var iteracion in Lista)
                 {
 
-                    dataGridView1.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad, iteracion.pass);
+                    dtgListaUsuarios.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad, iteracion.pass);
 
                 }
 
@@ -61,6 +71,7 @@ namespace Alvaro01.VISTA
                 MessageBox.Show(ex.ToString());
             }
             carga();
+            clear();
         }  
         
 private void button1_Click_1(object sender, EventArgs e)
@@ -85,6 +96,7 @@ private void button1_Click_1(object sender, EventArgs e)
                 MessageBox.Show(EX.ToString());
             }
             carga();
+            clear();
         }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
@@ -108,11 +120,27 @@ private void button1_Click_1(object sender, EventArgs e)
                 MessageBox.Show(ex.ToString());
             }
             carga();
+            clear();
         }
 
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtgListaUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String ID = dtgListaUsuarios.CurrentRow.Cells[0].Value.ToString();
+            String Nombre = dtgListaUsuarios.CurrentRow.Cells[1].Value.ToString();
+            String Apellido = dtgListaUsuarios.CurrentRow.Cells[2].Value.ToString();
+            String Edad = dtgListaUsuarios.CurrentRow.Cells[3].Value.ToString();
+            String Pass = dtgListaUsuarios.CurrentRow.Cells[4].Value.ToString();
+
+            TxtId.Text = ID;
+            TxtNameUser.Text = Nombre;
+            TxtApellido.Text = Apellido;
+            TxtEdad.Text = Edad;
+            TxtPass.Text = Pass;
         }
     }  
 }

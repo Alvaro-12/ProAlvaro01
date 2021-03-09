@@ -57,5 +57,16 @@ namespace Alvaro01.VISTA
             FrmOperaciones frmOperaciones = new FrmOperaciones();
             frmOperaciones.Show();
         }
+
+        private void matematicasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cRUDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frmUsuarios = new FrmUsuarios();
+            frmUsuarios.Show();
+        }
     }
 }
