@@ -37,7 +37,6 @@ namespace Alvaro01.VISTA
             this.TxtPass = new System.Windows.Forms.TextBox();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.TxtId = new System.Windows.Forms.TextBox();
-            this.BtnActualizar = new System.Windows.Forms.Button();
             this.LblId = new System.Windows.Forms.Label();
             this.LblUser = new System.Windows.Forms.Label();
             this.LblApellido = new System.Windows.Forms.Label();
@@ -115,7 +114,7 @@ namespace Alvaro01.VISTA
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnEliminar.AutoSize = true;
-            this.BtnEliminar.Location = new System.Drawing.Point(263, 27);
+            this.BtnEliminar.Location = new System.Drawing.Point(410, 27);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(130, 36);
             this.BtnEliminar.TabIndex = 5;
@@ -128,24 +127,11 @@ namespace Alvaro01.VISTA
             this.TxtId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtId.Enabled = false;
             this.TxtId.Location = new System.Drawing.Point(139, 12);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(440, 20);
             this.TxtId.TabIndex = 6;
-            // 
-            // BtnActualizar
-            // 
-            this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnActualizar.AutoSize = true;
-            this.BtnActualizar.Location = new System.Drawing.Point(468, 27);
-            this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(130, 36);
-            this.BtnActualizar.TabIndex = 7;
-            this.BtnActualizar.Text = "Actualizar";
-            this.BtnActualizar.UseVisualStyleBackColor = true;
-            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // LblId
             // 
@@ -214,10 +200,9 @@ namespace Alvaro01.VISTA
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.BtnGuardar);
             this.panel1.Controls.Add(this.BtnEliminar);
-            this.panel1.Controls.Add(this.BtnActualizar);
             this.panel1.Location = new System.Drawing.Point(7, 520);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 112);
+            this.panel1.Size = new System.Drawing.Size(608, 84);
             this.panel1.TabIndex = 13;
             // 
             // dtgListaUsuarios
@@ -281,7 +266,7 @@ namespace Alvaro01.VISTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 644);
+            this.ClientSize = new System.Drawing.Size(627, 616);
             this.Controls.Add(this.dtgListaUsuarios);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblContraseña);
@@ -315,7 +300,6 @@ namespace Alvaro01.VISTA
         private System.Windows.Forms.TextBox TxtPass;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.TextBox TxtId;
-        private System.Windows.Forms.Button BtnActualizar;
         private System.Windows.Forms.Label LblId;
         private System.Windows.Forms.Label LblUser;
         private System.Windows.Forms.Label LblApellido;

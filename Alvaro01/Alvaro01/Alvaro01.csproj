@@ -73,6 +73,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ClsDUserlist.cs" />
     <Compile Include="DAO\ClsListaUsuarios.cs" />
     <Compile Include="DOMINIO\Login.cs" />
     <Compile Include="MODEL\Model1.Context.cs">
