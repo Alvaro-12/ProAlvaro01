@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="programacionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TypeOfUser">
+    <Key>
+      <PropertyRef Name="IdTypeOfUser" />
+    </Key>
+    <Property Name="IdTypeOfUser" Type="int" Nullable="false" />
+    <Property Name="TypeofUserName" Type="int" />
+  </EntityType>
   <EntityType Name="UserList">
     <Key>
       <PropertyRef Name="Id" />
@@ -10,7 +17,36 @@
     <Property Name="Edad" Type="int" />
     <Property Name="pass" Type="varchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="UserList1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="50" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="pass" Type="varchar" MaxLength="50" />
+    <Property Name="IdTypeOfUser" Type="int" />
+  </EntityType>
+  <Association Name="FK_UserList1_TypeOfUser">
+    <End Role="TypeOfUser" Type="Self.TypeOfUser" Multiplicity="0..1" />
+    <End Role="UserList1" Type="Self.UserList1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfUser">
+        <PropertyRef Name="IdTypeOfUser" />
+      </Principal>
+      <Dependent Role="UserList1">
+        <PropertyRef Name="IdTypeOfUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="programacionModelStoreContainer">
+    <EntitySet Name="TypeOfUser" EntityType="Self.TypeOfUser" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserList" EntityType="Self.UserList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserList1" EntityType="Self.UserList1" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UserList1_TypeOfUser" Association="Self.FK_UserList1_TypeOfUser">
+      <End Role="TypeOfUser" EntitySet="TypeOfUser" />
+      <End Role="UserList1" EntitySet="UserList1" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

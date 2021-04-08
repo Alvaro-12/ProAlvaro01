@@ -77,6 +77,7 @@ namespace Alvaro01.VISTA
             this.TxtNameUser.Name = "TxtNameUser";
             this.TxtNameUser.Size = new System.Drawing.Size(440, 20);
             this.TxtNameUser.TabIndex = 1;
+            this.TxtNameUser.TextChanged += new System.EventHandler(this.TxtNameUser_TextChanged);
             // 
             // TxtApellido
             // 
@@ -132,6 +133,7 @@ namespace Alvaro01.VISTA
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(440, 20);
             this.TxtId.TabIndex = 6;
+            this.TxtId.TextChanged += new System.EventHandler(this.TxtId_TextChanged);
             // 
             // LblId
             // 
@@ -204,6 +206,7 @@ namespace Alvaro01.VISTA
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(608, 84);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dtgListaUsuarios
             // 
@@ -223,6 +226,7 @@ namespace Alvaro01.VISTA
             this.dtgListaUsuarios.Size = new System.Drawing.Size(603, 266);
             this.dtgListaUsuarios.TabIndex = 14;
             this.dtgListaUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListaUsuarios_CellClick);
+            this.dtgListaUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListaUsuarios_CellContentClick);
             // 
             // Column5
             // 

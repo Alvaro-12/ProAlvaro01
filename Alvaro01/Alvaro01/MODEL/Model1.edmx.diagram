@@ -6,6 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="96b4970d14e149c5a9511728d02f4fc9" Name="Diagram1">
         <EntityTypeShape EntityType="programacionModel.UserList" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="programacionModel.TypeOfUser" Width="1.5" PointX="5.875" PointY="2.625" />
+        <EntityTypeShape EntityType="programacionModel.UserList1" Width="1.5" PointX="3.125" PointY="1.875" />
+        <AssociationConnector Association="programacionModel.FK_UserList1_TypeOfUser" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

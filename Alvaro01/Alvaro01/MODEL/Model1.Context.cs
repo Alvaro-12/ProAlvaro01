@@ -26,5 +26,7 @@ namespace Alvaro01.MODEL
         }
     
         public virtual DbSet<UserList> UserList { get; set; }
+        public virtual DbSet<TypeOfUser> TypeOfUser { get; set; }
+        public virtual DbSet<UserList1> UserList1 { get; set; }
     }
 }

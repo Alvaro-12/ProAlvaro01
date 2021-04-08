@@ -12,5 +12,43 @@
   </EntityType>
   <EntityContainer Name="programacionEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="UserList" EntityType="Self.UserList" />
+    <EntitySet Name="TypeOfUser" EntityType="programacionModel.TypeOfUser" />
+    <EntitySet Name="UserList1" EntityType="programacionModel.UserList1" />
+    <AssociationSet Name="FK_UserList1_TypeOfUser" Association="programacionModel.FK_UserList1_TypeOfUser">
+      <End Role="TypeOfUser" EntitySet="TypeOfUser" />
+      <End Role="UserList1" EntitySet="UserList1" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="TypeOfUser">
+    <Key>
+      <PropertyRef Name="IdTypeOfUser" />
+    </Key>
+    <Property Name="IdTypeOfUser" Type="Int32" Nullable="false" />
+    <Property Name="TypeofUserName" Type="Int32" />
+    <NavigationProperty Name="UserList1" Relationship="programacionModel.FK_UserList1_TypeOfUser" FromRole="TypeOfUser" ToRole="UserList1" />
+  </EntityType>
+  <EntityType Name="UserList1">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="Int32" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdTypeOfUser" Type="Int32" />
+    <NavigationProperty Name="TypeOfUser" Relationship="programacionModel.FK_UserList1_TypeOfUser" FromRole="UserList1" ToRole="TypeOfUser" />
+  </EntityType>
+  <Association Name="FK_UserList1_TypeOfUser">
+    <End Type="programacionModel.TypeOfUser" Role="TypeOfUser" Multiplicity="0..1" />
+    <End Type="programacionModel.UserList1" Role="UserList1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfUser">
+        <PropertyRef Name="IdTypeOfUser" />
+      </Principal>
+      <Dependent Role="UserList1">
+        <PropertyRef Name="IdTypeOfUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

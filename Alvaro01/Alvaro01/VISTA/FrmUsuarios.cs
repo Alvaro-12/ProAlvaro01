@@ -37,12 +37,12 @@ namespace Alvaro01.VISTA
 
 
 
-            foreach (var iteracion in Lista)
-            {
+            //foreach (var iteracion in Lista)
+            //{
 
-                dtgListaUsuarios.Rows.Add(iteracion.Id, iteracion.NombreUsuario, iteracion.Apellido, iteracion.Edad, iteracion.pass);
+            //    dtgListaUsuarios.Rows.Add(iteracion.Id, iteracion.NombreUsuario, iteracion.Apellido, iteracion.Edad, iteracion.pass);
 
-            }
+            //}
 
            
         }
@@ -109,6 +109,26 @@ private void button1_Click_1(object sender, EventArgs e)
             TxtApellido.Text = Apellido;
             TxtEdad.Text = Edad;
             TxtPass.Text = Pass;
+        }
+
+        private void dtgListaUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNameUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }  
 }
