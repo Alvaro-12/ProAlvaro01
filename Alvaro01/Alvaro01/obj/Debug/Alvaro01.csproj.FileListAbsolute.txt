@@ -31,3 +31,4 @@ E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1Repositorios\ProAlvaro01\Alvaro01\Alvaro
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1Repositorios\ProAlvaro01\Alvaro01\Alvaro01\obj\Debug\Alvaro01.csproj.CopyComplete
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1Repositorios\ProAlvaro01\Alvaro01\Alvaro01\obj\Debug\Alvaro01.csprojAssemblyReference.cache
 E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1Repositorios\ProAlvaro01\Alvaro01\Alvaro01\obj\Debug\Alvaro01.VISTA.FrmJoin.resources
+E:\UNIVERSIDAD\Ciclo 03\Programacion 1\1Repositorios\ProAlvaro01\Alvaro01\Alvaro01\obj\Debug\Alvaro01.VISTA.FrmJoinVista.resources
